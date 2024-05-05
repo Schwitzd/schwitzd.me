@@ -1,0 +1,88 @@
+baseURL: https://schwitzd.me/
+languageCode: en-us
+title: Schwitzd
+theme: ["PaperMod"]
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+
+minify:
+  disableXML: true
+  minifyOutput: false
+
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON
+
+permalinks:
+    posts: /posts/:title
+
+params:
+  profileMode:
+    enabled: true
+    subtitle: "Welcome to my own website for me"
+    imageUrl: https://media.infosec.exchange/infosec.exchange/accounts/avatars/109/800/279/181/661/366/original/7f3ded060a7ae574.jpg"
+    imageWidth: 120
+    imageHeight: 120
+    buttons:
+    - name: Whoami
+      url: "/whoami2"
+    - name: Posts
+      url: "/posts"  
+  author: Daniel
+  description: "My website on technical stuff, IT security, cryptography and anything else I am interested in."
+  defaultTheme: auto
+  env: production
+
+  showShareButtons: false
+  showReadingTime: true
+  showPostNavLinks: false
+  showBreadCrumbs: false
+  showCodeCopyButtons: true
+  showToc: true
+  tocOpen: false
+  disableScrollToTop: false
+  hidemeta: false
+  hidesummary: false
+
+  assets:
+    disableHLJS: true
+
+  homeInfoParams:
+    Title: "Posts"
+
+  socialIcons:
+    - name: email
+      url: "mailto:me@schwitzd.me"
+    - name: mastodon
+      url: "https://infosec.exchange/@Schwitzd"
+    - name: github
+      url: "https://github.com/Schwitzd"
+    - name: RSS
+      url: "/posts/index.xml"
+
+  label:
+    text: "~/Schwitzd$ _"
+
+  fuseOpts:
+    ignoreLocation: true
+    keys: ["title", "permalink", "summary", "content"]
+
+markup:
+  highlight:
+    codeFences: true
+    guessSyntax: false
+    lineNos: false
+    noClasses: true
+    style: monokai
+
+menu:
+  main:
+    - identifier: search
+      name: Search
+      url: /search
