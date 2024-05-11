@@ -9,6 +9,8 @@ showtoc = false
 #### 08.05.2024
 
 * Extendend the whoami page
+* changed website description in the hugo.yaml
+* Fixed baseurl in hugo.yaml
 
 #### 05.05.2024
 

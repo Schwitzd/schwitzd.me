@@ -1,4 +1,4 @@
-baseURL: https://schwitzd.me/
+baseURL: https://www.schwitzd.me/
 languageCode: en-us
 title: Schwitzd
 theme: ["PaperMod"]
@@ -35,7 +35,7 @@ params:
     - name: Posts
       url: "/posts"  
   author: Daniel
-  description: "My website on technical stuff, IT security, cryptography and anything else I am interested in."
+  description: "My personal website on technical stuff, IT security, DevOps, Linux and anything else I am interested in."
   defaultTheme: auto
   env: production
 
