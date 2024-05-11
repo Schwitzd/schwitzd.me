@@ -13,7 +13,7 @@ My website is powered by [Azure Static Web Apps](https://azure.microsoft.com/en-
 
 <ins> Architecture component list: </ins>
 
-* [Azure Static Web Apps](https://azure.microsoft.com/en-us/products/app-service/static)
+* [Azure Static Web App](https://azure.microsoft.com/en-us/products/app-service/static)
 * [Cloudflare Registrar](https://www.cloudflare.com/products/registrar/)
 * [Terraform](https://www.terraform.io/)
 * [GitHub Actions](https://github.com/features/actions)

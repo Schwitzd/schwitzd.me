@@ -9,6 +9,8 @@ hidemeta = true
 
 I have been using Linux since back in 2003 when my father made me try SUSE Linux, from there I have tried them all. currently I use Arch Linux on my laptop and Debian on my Servers.
 
+:open_book: Much of my knowledge comes from people in the internet community who have decided to share their expertise freely. This website and my [Github page](https://github.com/Schwitzd/) is my commitment to give something back to the community in the hope that one day someone will benefit from my resources.
+
 :love_letter: Contact me:
 
 * me at schwitzd dot me
@@ -28,3 +30,5 @@ I have been using Linux since back in 2003 when my father made me try SUSE Linux
 * [The Microsoft Azure Security Podcast](https://azsecuritypodcast.azurewebsites.net/)
 
 :globe_with_meridians: If you are interested in [How I Set Up This Site](/posts/how-i-set-up-this-site) on its [Architecture](/architecture).
+
+:heart: I would like to thank my love for her endless patience and constant support in indulging my nerdy passions.
