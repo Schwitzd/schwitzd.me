@@ -25,13 +25,13 @@ permalinks:
 params:
   profileMode:
     enabled: true
-    subtitle: "Welcome to my own website for me"
-    imageUrl: https://media.infosec.exchange/infosec.exchange/accounts/avatars/109/800/279/181/661/366/original/7f3ded060a7ae574.jpg"
+    subtitle: "Welcome to my little corner of the internet"
+    imageUrl: https://avatars.githubusercontent.com/u/15292575
     imageWidth: 120
     imageHeight: 120
     buttons:
     - name: Whoami
-      url: "/whoami2"
+      url: "/whoami"
     - name: Posts
       url: "/posts"  
   author: Daniel
@@ -83,6 +83,11 @@ markup:
 
 menu:
   main:
+    - identifier: whoami
+      name: Whoami
+      url: /whoami
+      weight: 10
     - identifier: search
       name: Search
       url: /search
+      weigh: 20

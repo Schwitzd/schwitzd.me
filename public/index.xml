@@ -6,14 +6,24 @@
     <description>Recent content on Schwitzd</description>
     <generator>Hugo -- 0.125.5</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 04 May 2024 12:23:10 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 10 May 2024 11:39:18 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Not in My Picture</title>
+      <link>http://localhost:1313/posts/not-in-my-picture/</link>
+      <pubDate>Fri, 10 May 2024 11:39:18 +0000</pubDate>
+      <guid>http://localhost:1313/posts/not-in-my-picture/</guid>
+      <description>Surely you have been in a situation where you wanted to wait before taking a photo because there were other people in the lens. Or think about how beautiful the photo of that square would have been without the people.
+That&amp;rsquo;s it&amp;hellip; I do this almost every time I take a photo (apart from the time I was in the middle of nowhere in Iceland). So I said to myself: either I get up at 5am and take the photo, hoping that nobody else has had my bright idea, or we try to remove the objects with AI.</description>
+    </item>
     <item>
       <title>Architecture</title>
       <link>http://localhost:1313/architecture/</link>
       <pubDate>Sat, 04 May 2024 12:23:10 +0000</pubDate>
       <guid>http://localhost:1313/architecture/</guid>
-      <description>High-Level Architecture Architecture component list Deploying infrastructure Since I discovered Terraform (yes, I know IBM bought HashiCorp and now the purists are running away) I have become a big fan of Infrastructure as Code. So I decided to deploy all my Azure resources as code, here is the repository I use for that.</description>
+      <description>This page provides a detailed overview of the architecture and implementation strategies behind my website. It delves into the fundamental principles guiding its design and development.
+High-Level architecture My website is powered by Azure Static Web Apps, using the Hugo framework for its structure and functionality.
+Architecture component list: Azure Static Web Apps Cloudflare Registrar Terraform GitHub Actions Deploying infrastructure Since I discovered Terraform (yes, I know IBM bought HashiCorp and now people are switching to OpenTofu) I have become a big fan of Infrastructure as Code.</description>
     </item>
     <item>
       <title>How I Set Up This Site</title>
@@ -28,7 +38,9 @@ Past experiences Actually this is my second blog, for several years I maintained
       <link>http://localhost:1313/whoami/</link>
       <pubDate>Thu, 02 May 2024 20:21:16 +0000</pubDate>
       <guid>http://localhost:1313/whoami/</guid>
-      <description></description>
+      <description>&amp;#x1f44b;, I&amp;rsquo;m Daniel and I&amp;rsquo;ve been in the IT world for as long as I can remember. I&amp;rsquo;m fascinated by all technology things, but my current passions lie in Security and DevOps.
+I have been using Linux since back in 2003 when my father made me try SUSE Linux, from there I have tried them all. currently I use Arch Linux on my laptop and Debian on my Servers.
+&amp;#x1f48c; Contact me:</description>
     </item>
   </channel>
 </rss>

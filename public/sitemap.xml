@@ -2,16 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/posts/not-in-my-picture/</loc>
+    <lastmod>2024-05-10T11:39:18+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2024-05-10T11:39:18+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2024-05-10T11:39:18+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/architecture/</loc>
     <lastmod>2024-05-04T12:23:10+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2024-05-04T12:23:10+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/posts/how-i-set-up-this-site/</loc>
-    <lastmod>2024-05-04T09:23:32+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/</loc>
     <lastmod>2024-05-04T09:23:32+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/whoami/</loc>

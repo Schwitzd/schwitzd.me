@@ -6,8 +6,16 @@
     <description>Recent content in Posts on Schwitzd</description>
     <generator>Hugo -- 0.125.5</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 04 May 2024 09:23:32 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 10 May 2024 11:39:18 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Not in My Picture</title>
+      <link>http://localhost:1313/posts/not-in-my-picture/</link>
+      <pubDate>Fri, 10 May 2024 11:39:18 +0000</pubDate>
+      <guid>http://localhost:1313/posts/not-in-my-picture/</guid>
+      <description>Surely you have been in a situation where you wanted to wait before taking a photo because there were other people in the lens. Or think about how beautiful the photo of that square would have been without the people.
+That&amp;rsquo;s it&amp;hellip; I do this almost every time I take a photo (apart from the time I was in the middle of nowhere in Iceland). So I said to myself: either I get up at 5am and take the photo, hoping that nobody else has had my bright idea, or we try to remove the objects with AI.</description>
+    </item>
     <item>
       <title>How I Set Up This Site</title>
       <link>http://localhost:1313/posts/how-i-set-up-this-site/</link>
