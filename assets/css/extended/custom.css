@@ -19,3 +19,7 @@ svg:hover {
 .social-icons a:hover {
     border-bottom: none;
 }
+
+.post-footer {
+    margin-top: 0;
+}

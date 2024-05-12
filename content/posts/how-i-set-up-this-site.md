@@ -1,7 +1,7 @@
 +++
 title = 'How I Set Up This Site'
 date = 2024-05-04T09:23:32Z
-draft = true
+draft = false
 +++
 
 While creating this blog, I thought why not write my first post documenting the steps I took to make it all happen? Maybe this could help other people who have decided to take the same journey as me, so let's get started!

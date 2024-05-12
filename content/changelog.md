@@ -6,6 +6,13 @@ hidemeta = true
 showtoc = false
 +++
 
+#### 09.05.2024
+
+* Added README.md
+* Added .gitignore
+* Added Hope in the whoami page
+* Removed the annoing CSS 'post-footer' to keep the pages shorter
+
 #### 08.05.2024
 
 * Extendend the whoami page

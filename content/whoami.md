@@ -1,7 +1,7 @@
 +++
 title = 'Whoami'
 date = 2024-05-02T20:21:16Z
-draft = true
+draft = false
 hidemeta = true
 +++
 
@@ -30,5 +30,7 @@ I have been using Linux since back in 2003 when my father made me try SUSE Linux
 * [The Microsoft Azure Security Podcast](https://azsecuritypodcast.azurewebsites.net/)
 
 :globe_with_meridians: If you are interested in [How I Set Up This Site](/posts/how-i-set-up-this-site) on its [Architecture](/architecture).
+
+:cat: Hope, the real brain behind this website
 
 :heart: I would like to thank my love for her endless patience and constant support in indulging my nerdy passions.
