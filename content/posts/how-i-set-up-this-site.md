@@ -14,11 +14,11 @@ Actually this is my second blog, for several years I maintained a website called
 * Something totally nerdy
 * BaC (Blog as Code, I coined a new term?!) to host on my Github
 
-After some research I came across [Hugo](https://gohugo.io) and it was love at first sight.
+After some research I came across [Hugo framework](https://gohugo.io) and it was love at first sight.
 
 ## Architecture
 
-Being an infrastructure guy can only mean having a dedicated page about the architecture of my site with the explanations of my choices.
+Being an infrastructure guy can only mean having a dedicated page about the [architecture](/architecture) of my site with the explanations of my choices.
 
 ## Installing & Preparing Hugo
 
@@ -40,7 +40,7 @@ docker run --rm -it \
     server --bind 0.0.0.0 -D
 {{< / highlight >}}
 
-I quickly realised that I was in a chicken-egg situation.. to spawn a Hugo development server, I need an existing Hugo website, but I can create an Hugo website without the Hugo CLI?! so I decided to write a small bash script that would check if a website already exists on the mounted volume, and if not, launch a wizard to create one.
+I quickly realised that I was in a chicken-egg situation.. to spawn a Hugo development server, I need an existing Hugo website, but how I can create an Hugo website without the Hugo CLI?! so I decided to write a small bash script that would check if a website already exists on the mounted volume, and if not, launch a wizard to create one.
 
 The first time you start the container in an empty folder, you will see:
 
@@ -147,5 +147,6 @@ What I customised:
 * The links change colour on hover.
 * Social icons animate and change colour on hover
 * Removed the ugly underline for social icons in the footer
+* Removed haecoded blank space on the posts footer
 
 {{< gist Schwitzd 1a2f2b3fe7707c5fb0e43bdcea607525 >}}
