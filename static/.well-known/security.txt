@@ -1,0 +1,9 @@
+Contact: mailto:me@schwitzd.me
+Expires: 2025-07-07T21:00:00.000Z
+Encryption: https://www.schwitzd.me/pgp-key.asc
+Preferred-Languages: en
+Canonical: https://www.schwitzd.me/.well-known/security.txt
+
+Policy: This website is statically generated and hosted on Microsoft Azure. If you find a security problem related to the hosting, 
+        please report it to Microsoft in accordance with their security policy. 
+        For vulnerabilities in the site code or configuration, please contact me directly.

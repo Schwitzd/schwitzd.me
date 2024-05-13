@@ -14,10 +14,11 @@ I have been using Linux since back in 2003 when my father made me try SUSE Linux
 :love_letter: Contact me:
 
 * me at schwitzd dot me
-* PGP key
-* PGP ID:
+* [PGP key](/pgp-key.asc)
+* **PGP ID**: c31e fcdc bd68 ec9f 2b71 4734 c445 597c 71bd 2357
 
 :studio_microphone: Currently listening following podcasts:
+
 * [SANS Internet Stormcenter Daily Cyber Security](https://isc.sans.edu/podcast.html) (while :toothbrush::tooth:)
 * [Open Source Security Podcast](https://opensourcesecurity.io/category/podcast/)
 * [Darknet Diaries](https://darknetdiaries.com/episode/)

@@ -6,16 +6,25 @@ hidemeta = true
 showtoc = false
 +++
 
+#### 13.05.2024
+
+* Added infrastructure schema picture
+* Added [humans.txt](/humans.txt) file
+* Added [security.txt](.well-known/security.txt) file
+* Added [pgp-key.txt](/pgp-key.txt)
+* Added PGP details on [whoami page](/whoami)
+
 #### 09.05.2024
 
 * Added README.md
 * Added .gitignore
-* Added Hope in the whoami page
+* Added [Architecture page](/architecture)
+* Added Hope in the [whoami page](/whoami)
 * Removed the annoing CSS 'post-footer' to keep the pages shorter
 
 #### 08.05.2024
 
-* Extendend the whoami page
+* Extendend the [whoami page](/whoami)
 * changed website description in the hugo.yaml
 * Fixed baseurl in hugo.yaml
 

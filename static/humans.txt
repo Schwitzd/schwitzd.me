@@ -1,0 +1,25 @@
+/* TEAM */
+  Creator: Daniel Schwitzgebel
+  Site: www.schwitzd.me
+  Email: me at schwitzd dot me
+  Mastodon: schwitzd@infosec.exchange
+  From: Switzerland
+
+/* THANKS */
+  My lovely girlfriend
+
+  Architecture schema icons: Ben Coleman (https://code.benco.io/icon-collection) & https://www.svgrepo.com
+  Architecture schema software: Draw.io
+  
+  Inspiration: https://kpwn.de
+  Inspiration: https://shellsharks.com
+
+/* SITE */
+  Founded: May, 2024
+  Language: English
+  Doctype: HTML5
+  Standards: HTML5, CSS3
+  Framework: Hugo
+  Theme: PaperMod
+  IDE: VS Code
+  Hosting: Azure Static Web App
