@@ -162,3 +162,15 @@ What I customised:
 * Removed haecoded blank space on the posts footer
 
 {{< gist Schwitzd 1a2f2b3fe7707c5fb0e43bdcea607525 >}}
+
+### 404 page
+
+I chose to use the default PaperMod 404 page as the site is [hosted on Azure](/architecture) in the [staticwebapp.config.json](/staticwebapp.config.json) file I added:
+
+{{< highlight json >}}
+  "responseOverrides": {
+    "404": {
+      "rewrite": "/404"
+    }
+  }
+{{< / highlight >}}

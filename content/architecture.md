@@ -51,4 +51,15 @@ I have defined a [custom configuration](https://learn.microsoft.com/en-us/azure/
 
 ### Security headers
 
-Some will laugh, others will think it's overkill.. but the main reason I added all these security headers is for learning purposes. The site is now rated **A+** on [securityheaders.com](https://securityheaders.com/?q=https%3A%2F%2Fwww.schwitzd.me%2F)
+Some will laugh, others will think it's overkill.. but the main reason I added all these security headers is for learning purposes. The site is now rated **A** on [securityheaders.com](https://securityheaders.com/?q=https%3A%2F%2Fwww.schwitzd.me%2F)
+
+Why not **A+**? Because at the time of writing PaperMod uses inline Javascript and styles. I have reported an issue [CSP Enhancement #1517](https://github.com/adityatelange/hugo-PaperMod/issues/1517).
+
+## Development
+
+As explained on the [How I Set Up This Site](posts/how-i-set-up-this-site/) page, I use [Docker](https://www.docker.com/) to host this site during the development, with the [docker-hugo](https://github.com/Schwitzd/docker-hugo) image I created to suit my needs.
+I added the [Hugo server configuration file](https://gohugo.io/getting-started/configuration/#configure-server), which is useful for testing the [CSP policy](#security-headers) before deploying the site to Azure.
+
+```bash
+touch config/development/server.yaml
+```
