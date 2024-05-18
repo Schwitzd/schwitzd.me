@@ -1,10 +1,11 @@
 {
     "globalHeaders": {
-      "Content-Security-Policy": "default-src 'self'; script-src 'unsafe-inline' https://www.schwitzd.me; base-uri 'none'; object-src 'none'; require-trusted-types-for 'script'",
+      "Content-Security-Policy": "default-src 'self'; script-src 'self' https://gist.github.com 'unsafe-inline'; style-src 'self' https://github.githubassets.com 'unsafe-inline'; base-uri 'none'; object-src 'none'; require-trusted-types-for 'script';",
       "X-Frame-Options": "DENY",
       "Permissions-Policy": "interest-cohort=()",
       "Referrer-Policy": "no-referrer-when-downgrade",
-      "Cross-Origin-Embedder-Policy": "require-corp",
+      "Cross-Origin-Resource-Policy": "cross-origin",
+      "Cross-Origin-Embedder-Policy": "unsafe-none",
       "Cross-Origin-Opener-Policy": "same-origin"
   },
   "responseOverrides": {
