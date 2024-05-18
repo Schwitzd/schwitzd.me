@@ -1,7 +1,7 @@
 headers:
   - for: /**
     values:
-      Content-Security-Policy: default-src 'self' 'unsafe-inline';
+      Content-Security-Policy: default-src 'self'; script-src 'unsafe-inline' http://localhost:1313; base-uri 'none'; object-src 'none'; require-trusted-types-for 'script'
       X-Frame-Options: DENY
       Feature-Policy: none
       Permissions-Policy: interest-cohort=()

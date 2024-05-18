@@ -1,8 +1,7 @@
 {
     "globalHeaders": {
-      "Content-Security-Policy": "default-src 'self' 'unsafe-inline';",
+      "Content-Security-Policy": "default-src 'self'; script-src 'unsafe-inline' https://www.schwitzd.me; base-uri 'none'; object-src 'none'; require-trusted-types-for 'script'",
       "X-Frame-Options": "DENY",
-      "Feature-Policy": "none",
       "Permissions-Policy": "interest-cohort=()",
       "Referrer-Policy": "no-referrer-when-downgrade",
       "Cross-Origin-Embedder-Policy": "require-corp",
