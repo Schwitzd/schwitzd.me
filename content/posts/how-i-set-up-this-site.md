@@ -165,7 +165,7 @@ What I customised:
 
 ### 404 page
 
-I chose to use the default PaperMod 404 page as the site is [hosted on Azure](/architecture) in the [staticwebapp.config.json](/staticwebapp.config.json) file I added:
+I choose to use the default PaperMod 404 page as the site is [hosted on Azure](/architecture) in the [staticwebapp.config.json](/staticwebapp.config.json) file I added:
 
 {{< highlight json >}}
   "responseOverrides": {
