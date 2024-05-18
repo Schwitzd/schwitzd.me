@@ -24,8 +24,6 @@ permalinks:
     posts: /posts/:title
 
 params:
-  assets:
-    disableHLJS: true
   profileMode:
     enabled: true
     subtitle: "Welcome to my little corner of the internet"
