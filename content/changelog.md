@@ -6,6 +6,13 @@ hidemeta = true
 showtoc = false
 +++
 
+#### 18.05.2024
+
+* Added [ai.txt](/ai.txt)
+* Added [robots.txt](/robots.txt)
+* Added [privacy policy](/privay) in the footer
+* Added *staticwebapp.config.json* used by Azure Static Apps to set security headers
+
 #### 13.05.2024
 
 * Added infrastructure schema picture

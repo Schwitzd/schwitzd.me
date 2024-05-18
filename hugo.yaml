@@ -15,9 +15,10 @@ minify:
 
 outputs:
     home:
-        - HTML
-        - RSS
-        - JSON
+      - HTML
+    section:
+      - HTML
+      - RSS
 
 permalinks:
     posts: /posts/:title
@@ -91,3 +92,8 @@ menu:
       name: Search
       url: /search
       weigh: 20
+
+headers:
+  - for: /**
+    values:
+      Content-Security-Policy: default-src 'self'

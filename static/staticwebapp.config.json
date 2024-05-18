@@ -1,0 +1,5 @@
+{
+    "globalHeaders": {
+      "content-security-policy": "default-src 'self'"
+  }
+}

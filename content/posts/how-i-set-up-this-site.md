@@ -120,6 +120,14 @@ params:
 
 All these customisations are strictly related to the [PaperMod](https://github.com/adityatelange/hugo-PaperMod) theme.
 
+### Update theme
+
+This may change depending on your theme and how you installed it. But to keep up to date [PaperMod](https://github.com/adityatelange/hugo-PaperMod/wiki/Installation#installingupdating-papermod) I run this command:
+
+```bash
+git submodule update --remote --merge
+```
+
 ### Social icons in footer
 
 I added the social icons on every page (yes, because I want to be an influencer!) except on the homepage because it is already there by default for the **profile mode**. Ok yes I did it dorty.. instead of using the [partial templates](https://gohugo.io/templates/partials/) I modified the theme directly (will be improved in the future, I promised the 04.05.2024). Edit the file *theme/PaperMod/layouts/partials/footer.html* as follows.
@@ -132,6 +140,10 @@ I added the social icons on every page (yes, because I want to be an influencer!
     {{ end }}
 [...]
 {{< / highlight >}}
+
+### Privacy policy in footer
+
+The [privacy policy](/privay) will be added to the footer in the same way as the [social icons](#social-icons-in-footer).
 
 ### CSS
 
