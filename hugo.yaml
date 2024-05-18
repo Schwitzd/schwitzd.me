@@ -27,7 +27,7 @@ params:
   profileMode:
     enabled: true
     subtitle: "Welcome to my little corner of the internet"
-    imageUrl: https://avatars.githubusercontent.com/u/15292575
+    imageUrl: /img/me.jpg
     imageWidth: 120
     imageHeight: 120
     buttons:
@@ -92,8 +92,3 @@ menu:
       name: Search
       url: /search
       weigh: 20
-
-headers:
-  - for: /**
-    values:
-      Content-Security-Policy: default-src 'self'

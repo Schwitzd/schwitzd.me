@@ -40,6 +40,15 @@ To summarise:
 1. Added the DNS TXT record to validate that I'm the owner of the domain
 1. Deploy the Github action to automatically push changes to the Azure Static App
 
-## Design Walkthrough
+## Cloudflare
 
-* Most of my changes are documented on the [changelog](/changelog) page
+By default Cloudflare configures [TLS encryption mode](https://developers.cloudflare.com/ssl/origin-configuration/ssl-modes/) to **Flexible**, from the official documentation: *Cloudflare allows HTTPS connections between your visitor and Cloudflare, but all connections between Cloudflare and your origin are made through HTTP*.  
+At the same time, Azure enforces HTTPS redirection and this leads to the browser error [ERR_TOO_MANY_REDIRECTS](https://developers.cloudflare.com/ssl/troubleshooting/too-many-redirects/). To resolve this issue, go to your Cloudflare Dashboard → SSL/TLS → Overview and select **Full (strict)**.
+
+## Configure Azure Static Web Apps
+
+I have defined a [custom configuration](https://learn.microsoft.com/en-us/azure/static-web-apps/configuration) for Azure Static Web Apps with the [staticwebapp.config.json](/staticwebapp.config.json) created in the *static* folder.
+
+### Security headers
+
+Some will laugh, others will think it's overkill.. but the main reason I added all these security headers is for learning purposes. The site is now rated **A+** on [securityheaders.com](https://securityheaders.com/?q=https%3A%2F%2Fwww.schwitzd.me%2F)

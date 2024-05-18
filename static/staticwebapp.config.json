@@ -1,5 +1,16 @@
 {
     "globalHeaders": {
-      "content-security-policy": "default-src 'self'"
+      "Content-Security-Policy": "default-src 'self' 'unsafe-inline';",
+      "X-Frame-Options": "DENY",
+      "Feature-Policy": "none",
+      "Permissions-Policy": "interest-cohort=()",
+      "Referrer-Policy": "no-referrer-when-downgrade",
+      "Cross-Origin-Embedder-Policy": "require-corp",
+      "Cross-Origin-Opener-Policy": "same-origin"
+  },
+  "responseOverrides": {
+    "404": {
+      "rewrite": "/404"
+    }
   }
 }

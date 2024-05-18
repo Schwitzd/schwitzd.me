@@ -12,6 +12,8 @@ showtoc = false
 * Added [robots.txt](/robots.txt)
 * Added [privacy policy](/privay) in the footer
 * Added *staticwebapp.config.json* used by Azure Static Apps to set security headers
+* Added config/development/server.yaml to test security headers
+* Added 404 page
 
 #### 13.05.2024
 

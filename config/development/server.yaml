@@ -1,0 +1,10 @@
+headers:
+  - for: /**
+    values:
+      Content-Security-Policy: default-src 'self' 'unsafe-inline';
+      X-Frame-Options: DENY
+      Feature-Policy: none
+      Permissions-Policy: interest-cohort=()
+      Referrer-Policy: no-referrer-when-downgrade
+      Cross-Origin-Embedder-Policy: require-corp
+      Cross-Origin-Opener-Policy: same-origin
