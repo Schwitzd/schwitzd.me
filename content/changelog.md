@@ -6,6 +6,12 @@ hidemeta = true
 showtoc = false
 +++
 
+#### 20.05.2024
+
+* Enhanced CSP to allow images to be loaded from OneDrive
+* Release article 'Not in my Picture'
+* Small changes on architecture page
+
 #### 18.05.2024
 
 * Added [ai.txt](/ai.txt)

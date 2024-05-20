@@ -1,7 +1,7 @@
 +++
 title = 'Not in My Picture'
 date = 2024-05-10T11:39:18Z
-draft = true
+draft = false
 +++
 
 Surely you have been in a situation where you wanted to wait before taking a photo because there were other people in the lens. Or think about how beautiful the photo of that square would have been without the people.
@@ -43,3 +43,19 @@ While searching the internet I came across [IOPaint](https://github.com/Sanster/
     ```
 
 4. Once the container is up and running, you can access IOPaint at `http://localhost:8080` in your web browser.
+
+### How to use
+
+I will not make a tutorial on how to use IOPaint, you can find the [official documentation](https://www.iopaint.com/), and on Youtube you can find lots of videos.
+
+## Result
+
+This was my original picture I shooted, the square was full of people goin back and forth and was impossible to take a picture of the abandoned hotel alone.
+
+{{< figure src="https://onedrive.live.com/embed?resid=DC941554AACD227C%2112277&authkey=%21AACf8t5beAj9jCU&width=1024" align="center" caption="Original picture">}}
+
+Taaac... the result after I removed the three people, as you can see, starting behind the shadow, the image is blurred and instead of creating the pillar behind the man's head, a mess happened.
+
+{{< figure src="https://onedrive.live.com/embed?resid=DC941554AACD227C%2112276&authkey=%21AIkigMEf39hbLgg&width=1024" align="center" caption="AI processed picture">}}
+
+This is just an example, I tried to process several images but the end result was always similar.

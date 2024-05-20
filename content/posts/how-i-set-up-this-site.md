@@ -85,6 +85,18 @@ markup:
 
 My favourite style theme is **Monokay** but [here](https://xyproto.github.io/splash/docs/all.html) you can see the full list of available themes.
 
+## Shortcodes
+
+Hugo's [shortcodes](https://gohugo.io/content-management/shortcodes/) offer a powerful feature for enhancing content. These snippets, embedded within content files, are processed by Hugo using predefined templates. They are particularly useful for scenarios where plain Markdown falls short.
+
+An example shortcode is [image](https://gohugo.io/content-management/shortcodes/#figure), which I use to embed images in my posts.
+
+```
+{{</* figure src="https://onedrive.live.com/embed?resid=DC941554AACD227C%2112277&authkey=%21AACf8t5beAj9jCU&width=1024" align="center" caption="Original picture" */>}}
+```
+
+As you can see, I decided to upload all my pictures to my personal OneDrive subscription.
+
 ## Pages structure
 
 I have decided to put my **posts** in the *./content/posts* folder and my **pages** in the *./content* folder, so I need to run the following commands depending on what I want to create:

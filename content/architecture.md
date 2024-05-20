@@ -53,7 +53,7 @@ I have defined a [custom configuration](https://learn.microsoft.com/en-us/azure/
 
 Some will laugh, others will think it's overkill.. but the main reason I added all these security headers is for learning purposes. The site is now rated **A** on [securityheaders.com](https://securityheaders.com/?q=https%3A%2F%2Fwww.schwitzd.me%2F)
 
-Why not **A+**? Because at the time of writing PaperMod uses inline Javascript and styles. I have reported an issue [CSP Enhancement #1517](https://github.com/adityatelange/hugo-PaperMod/issues/1517).
+Why not **A+**? Because at the time of writing PaperMod uses inline Javascript and styles. I have reported an issue [CSP Enhancement by removing unsafe-inline #1517](https://github.com/adityatelange/hugo-PaperMod/issues/1517), but it does not seem to be a priority and my impression is that it will take a lot of time.
 
 ## Development
 
