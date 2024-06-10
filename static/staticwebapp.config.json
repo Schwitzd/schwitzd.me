@@ -12,5 +12,8 @@
     "404": {
       "rewrite": "/404"
     }
+  },
+  "mimeTypes": {
+    ".css": "text/css"
   }
 }
