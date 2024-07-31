@@ -1,7 +1,7 @@
 +++
 title = 'Embracing Man Pages'
 date = 2024-07-11T19:49:49Z
-draft = true
+draft = false
 +++
 
 Nowadays, the browser is always open on my computer and I spend most of my time there. If there is a problem or I need to look up the parameters of a command, the first thing I do is look it up on the web. Now I want to go back to using man pages and rediscover the romance and essence that they convey.

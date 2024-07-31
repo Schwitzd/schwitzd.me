@@ -1,0 +1,12 @@
+services:
+  myblog:
+    image: docker-hugo
+    container_name: myblog
+    ports:
+      - "1313:1313"
+    user: ${UID}:${GID}
+    volumes:
+      - ~/Github/schwitzd.me:/site
+    command: server --bind 0.0.0.0 -D
+    tty: true
+    stdin_open: true

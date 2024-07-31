@@ -6,6 +6,10 @@ hidemeta = true
 showtoc = false
 +++
 
+#### 15.07.2024
+
+* Added `docker-compose.yml`
+
 #### 20.05.2024
 
 * Enhanced CSP to allow images to be loaded from OneDrive
@@ -17,8 +21,8 @@ showtoc = false
 * Added [ai.txt](/ai.txt)
 * Added [robots.txt](/robots.txt)
 * Added [privacy policy](/privay) in the footer
-* Added *staticwebapp.config.json* used by Azure Static Apps to set security headers
-* Added config/development/server.yaml to test security headers
+* Added `staticwebapp.config.json` used by Azure Static Apps to set security headers
+* Added `config/development/server.yaml` to test security headers
 * Added 404 page
 
 #### 13.05.2024
@@ -31,17 +35,17 @@ showtoc = false
 
 #### 09.05.2024
 
-* Added README.md
-* Added .gitignore
+* Added `README.md`
+* Added `.gitignore`
 * Added [Architecture page](/architecture)
 * Added Hope in the [whoami page](/whoami)
 * Removed the annoing CSS 'post-footer' to keep the pages shorter
 
-#### 08.05.2024
+#### 08.05.202`
 
 * Extendend the [whoami page](/whoami)
-* changed website description in the hugo.yaml
-* Fixed baseurl in hugo.yaml
+* changed website description in the `hugo.yaml`
+* Fixed baseurl in `hugo.yaml`
 
 #### 05.05.2024
 
