@@ -1,7 +1,7 @@
 +++
 title = 'Raspberry Pi Notes'
 date = 2024-05-31T10:27:03Z
-draft = true
+draft = false
 +++
 
 These evolving personal notes document my journey and discoveries as I explore the versatile Raspberry Pi. At present, all information pertains specifically to the **Raspberry Pi 5**.
@@ -50,6 +50,7 @@ sudo systemctl restart NetworkManager
 ```
 
 ## Real-Time Clock
+
 The integrated Real Time Clock (RTC) feature allows many scenarios, the most common of which is the ability to set wake-up alarms that allow the board to enter an ultra-low power state, consuming only about 3mA.
 
 ### Wake-up alarms
@@ -64,7 +65,7 @@ sudo -E rpi-eeprom-config --edit
 
 Add the following lines to the configuration file
 
-```
+```sh
 POWER_OFF_ON_HALT=1 WAKE_ON_GPIO=0
 ```
 
@@ -85,7 +86,7 @@ When choosing a battery, care should be taken not to use a primary lithium cell 
 
 Trickle charging is disabled by default, but can be enabled by adding a line to the `/boot/firmware/config.txt` file:
 
-```
+```sh
 dtparam=rtc_bbat_vchg=3000000
 ```
 
@@ -108,7 +109,6 @@ lspci
 0000:03:00.0 Non-Volatile memory controller: Intel Corporation SSD Pro 7600p/760p/E 6100p Series (rev 03)
 0001:00:00.0 PCI bridge: Broadcom Inc. and subsidiaries Device 2712 (rev 21)
 0001:01:00.0 Ethernet controller: Device 1de4:0001
-
 ```
 
 ## Shops
