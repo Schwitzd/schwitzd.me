@@ -66,7 +66,7 @@ Now is time to mount your pool in `/etc/fstab`, get the **UUID** from the previu
 
 ```bash
 # My Pool mount options
-MOUNTS_OPTIONS="autodefrag,compress=zstd:3,discard=async,noatime,nodiratime,nodev,rw,space_cache=v2,ssd,user"
+MOUNT_OPTIONS="autodefrag,compress=zstd:3,discard=async,noatime,nodiratime,nodev,rw,space_cache=v2,ssd,user"
 
 # Update fstab with new mount point
 echo "UUID=<YOUR-UUID> /mnt/my_pool btrfs $MOUNT_OPTIONS 0 0" | sudo tee -a /etc/fstab
