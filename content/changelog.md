@@ -6,6 +6,10 @@ hidemeta = true
 showtoc = false
 +++
 
+#### 01.09.2024
+
+* Update CSP with new embedded onedrive domain
+
 #### 15.07.2024
 
 * Added `docker-compose.yml`

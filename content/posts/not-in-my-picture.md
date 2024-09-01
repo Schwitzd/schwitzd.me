@@ -52,10 +52,10 @@ I will not make a tutorial on how to use IOPaint, you can find the [official doc
 
 This was my original picture I shooted, the square was full of people goin back and forth and was impossible to take a picture of the abandoned hotel alone.
 
-{{< figure src="https://onedrive.live.com/embed?resid=DC941554AACD227C%2112277&authkey=%21AFhrCU08eOJVp8E&width=1024" align="center" caption="Original picture">}}
+{{< figure src="https://1drv.ms/i/s!AnwizapUFZTc33VYawlNPHjiVafB?embed=1&width=1024" align="center" caption="Original picture">}}
 
 Taaac... the result after I removed the three people, as you can see, starting behind the shadow, the image is blurred and instead of creating the pillar behind the man's head, a mess happened.
 
-{{< figure src="https://onedrive.live.com/embed?resid=DC941554AACD227C%2112276&authkey=%21AM_jvu8G1NGjecA&width=1024" align="center" caption="AI processed picture">}}
+{{< figure src="https://1drv.ms/i/s!AnwizapUFZTc33TP477vBtTRo3nA?embed=1&width=1024" align="center" caption="AI processed picture">}}
 
 This is just an example, I tried to process several images but the end result was always similar.
