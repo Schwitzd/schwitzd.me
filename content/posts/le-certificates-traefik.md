@@ -158,5 +158,5 @@ kubectl -n <namespace> describe secret <tls-secret-name>
 
 I would like to thanks for inspiring me to write this article:
 
-- [Wildcard Certificates with Traefik](https://blog.stonegarden.dev/articles/2023/12/traefik-wildcard-certificates/) (also to let me discover [Mermaid](https://mermaid.live))
-- [Secure Web Applications with Traefik Proxy, cert-manager, and Let’s Encrypt](https://traefik.io/blog/secure-web-applications-with-traefik-proxy-cert-manager-and-lets-encrypt/)
+* [Wildcard Certificates with Traefik](https://blog.stonegarden.dev/articles/2023/12/traefik-wildcard-certificates/) (also to let me discover [Mermaid](https://mermaid.live))
+* [Secure Web Applications with Traefik Proxy, cert-manager, and Let’s Encrypt](https://traefik.io/blog/secure-web-applications-with-traefik-proxy-cert-manager-and-lets-encrypt/)
