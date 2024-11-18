@@ -49,6 +49,29 @@ sudo nmtui
 sudo systemctl restart NetworkManager
 ```
 
+## Memory
+
+### Swap
+
+Swap provides extra virtual memory using disk space when RAM is full, helping prevent crashes on memory-limited devices like the Raspberry Pi. This section shows how to resize your swap space to better handle memory-intensive tasks.
+
+```sh
+# Turn off the current swap
+sudo dphys-swapfile swapoff
+
+# Edit the swap configuration file
+sudo vim /etc/dphys-swapfile
+
+# Increase the swap size
+CONF_SWAPSIZE=1024
+
+# Apply the new swap size
+sudo dphys-swapfile setup
+
+# Turn the swap back on
+sudo dphys-swapfile swapon
+```
+
 ## Real-Time Clock
 
 The integrated Real Time Clock (RTC) feature allows many scenarios, the most common of which is the ability to set wake-up alarms that allow the board to enter an ultra-low power state, consuming only about 3mA.
