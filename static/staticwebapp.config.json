@@ -1,6 +1,6 @@
 {
   "globalHeaders": {
-    "Content-Security-Policy": "default-src 'self'; script-src 'self' https://gist.github.com 'unsafe-inline'; style-src 'self' https://github.githubassets.com 'unsafe-inline'; base-uri 'none'; object-src 'none'; require-trusted-types-for 'script';  style-src 'self' https://github.githubassets.com 'unsafe-inline'; base-uri 'none'; object-src 'none'; require-trusted-types-for 'script'; img-src 'self' https://1drv.ms https://onedrive.live.com https://api.onedrive.com https://*.storage.live.com;",
+    "Content-Security-Policy": "default-src 'self'; script-src 'self' https://gist.github.com 'unsafe-inline'; style-src 'self' https://github.githubassets.com 'unsafe-inline'; base-uri 'none'; object-src 'none'; require-trusted-types-for 'script';  style-src 'self' https://github.githubassets.com 'unsafe-inline'; base-uri 'none'; object-src 'none'; require-trusted-types-for 'script'; img-src 'self' https://*.schwitzd.me https://1drv.ms https://onedrive.live.com https://api.onedrive.com https://*.storage.live.com;",
     "X-Frame-Options": "DENY",
     "Permissions-Policy": "interest-cohort=()",
     "Referrer-Policy": "no-referrer-when-downgrade",
