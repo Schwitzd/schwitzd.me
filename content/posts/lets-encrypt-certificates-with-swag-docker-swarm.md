@@ -76,11 +76,11 @@ Each provider has its own configuration file, stored in `swag/config/dns-conf/`,
 # Replace with your values
 
 # With global api key:
-dns_cloudflare_email = cloudflare@example.com
-dns_cloudflare_api_key = 0123456789abcdef0123456789abcdef01234567
+#dns_cloudflare_email = cloudflare@example.com
+#dns_cloudflare_api_key = 0123456789abcdef0123456789abcdef01234567
 
 # With token (comment out both lines above and uncomment below):
-#dns_cloudflare_api_token = 0123456789abcdef0123456789abcdef01234567
+dns_cloudflare_api_token = 0123456789abcdef0123456789abcdef01234567
 ```
 
 The strongly recommended authentication method is to use **API token** rather than **Global API key** as you can grant more granular permissions. In this case only **Edit: Zone.DNS** is required.  
