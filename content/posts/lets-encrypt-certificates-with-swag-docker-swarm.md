@@ -47,7 +47,7 @@ This command sets up the current machine as the Swarm manager.
 To add a secret to your Docker Swarm, use the following command:
 
 ```sh
-echo "your_secret_value" | docker secret create my_secret_name -
+echo -n "your_secret_value" | docker secret create my_secret_name -
 ```
 
 Personally, I don't like this approach because your secret is stored in your bash history, but unfortunately it's necessary because you can get trailing space problems with other methods. So I suggest you remove the line from your history with `history -d <line_number>`.
