@@ -89,7 +89,8 @@ sudo -E rpi-eeprom-config --edit
 Add the following lines to the configuration file
 
 ```sh
-POWER_OFF_ON_HALT=1 WAKE_ON_GPIO=0
+POWER_OFF_ON_HALT=1
+WAKE_ON_GPIO=0
 ```
 
 Test the wake functionality with the commands
@@ -114,6 +115,11 @@ dtparam=rtc_bbat_vchg=3000000
 ```
 
 After a reboot, you'll see the charge voltage change, indicating that the battery is now being trickled charged.
+To get the current voltage run the following command:
+
+```sh
+cat /sys/devices/platform/soc/soc:rpi_rtc/rtc/rtc0/charging_voltage
+```
 
 ## Hardware
 
