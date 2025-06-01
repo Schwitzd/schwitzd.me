@@ -36,7 +36,7 @@ However, there is a downside to this change: if you are connected to a network a
 
 To preventing also NetworkManager to overwrite the `/etc/resolv.conf` create a file named `/etc/NetworkManager/conf.d/dns.conf` and add following content:
 
-```
+```conf
 [main]
 dns=none
 ```

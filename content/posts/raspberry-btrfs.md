@@ -10,13 +10,13 @@ I would like to build a simple NAS using my Raspberry Pi 5, equipped with the [G
 
 1. To install BTRFS excecute the following commnad:
 
-    ```bash
+    ```sh
     sudo apt install btrfs-progs
     ```
 
 1. Uses `lsblk` to get the current partitions status
 
-    ```bash
+    ```sh
     $ lsblk 
     NAME        MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
     mmcblk0     179:0    0  14.9G  0 disk 
@@ -28,7 +28,11 @@ I would like to build a simple NAS using my Raspberry Pi 5, equipped with the [G
     nvme2n1     259:7    0 238.5G  0 disk 
     ```
 
-1. If needed remove the old partitions using `fdisk`, `cfdisk` or `parted`
+1. If necessary, use one of the many tools, such as `wipefs`, `fdisk`, `cfdisk`, or `parted`, to remove the old partitions, for example:
+
+    ```sh
+    sudo wipefs -a /dev/<disk-name>
+    ```
 
 ## BTFS Pool
 
@@ -37,34 +41,54 @@ The best way to use RAID is to have all the discs of the same size, otherwise th
 
 1. Create the mount point of the pool
 
-    ```bash
+    ```sh
     sudo mkdir /mnt/my_pool
     sudo chown -R $USER:$USER /mnt/my_pool
     ```
 
 1. Create the BTRFS pool, in my case with the three disks
 
-    ```bash
+    ```sh
     sudo mkfs.btrfs -d single -L my_pool /dev/nvme0n1 /dev/nvme1n1 /dev/nvme2n1 -f
     ```
 
 1. Get your nearly created pool details
 
-    ```bash
+    ```sh
     sudo btrfs filesystem show
     ```
 
 To get details about the BTRS pool
 
-```bash
+```sh
 sudo btrfs filesystem usage /mnt/my_pool
 ```
+
+### Expand the pool
+
+1. If necessary, wipe the disk before adding it to the pool.
+1. Add the disk to the existing Btrfs pool
+
+    ```sh
+    sudo btrfs device add /dev/nvme3n1 /mnt/btrfs_pool
+    ```
+
+1. Rebalance the data across all disks
+
+    ```sh
+    sudo btrfs balance start /mnt/btrfs_pool
+
+    # to check the rebalance status of a Btrfs volume
+    sudo btrfs balance status /mnt/my_pool
+    ```
+
+    Balancing a Btrfs pool is a **computationally intensive operation** and can take a significant amount of time depending on the **size and usage** of the pool.
 
 ## Mount the pool
 
 Now is time to mount your pool in `/etc/fstab`, get the **UUID** from the previus command and add following line
 
-```bash
+```sh
 # My Pool mount options
 MOUNT_OPTIONS="autodefrag,compress=zstd:3,discard=async,noatime,nodiratime,nodev,rw,space_cache=v2,ssd,user"
 
