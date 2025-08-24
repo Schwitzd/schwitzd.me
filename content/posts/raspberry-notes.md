@@ -121,6 +121,17 @@ To get the current voltage run the following command:
 cat /sys/devices/platform/soc/soc:rpi_rtc/rtc/rtc0/charging_voltage
 ```
 
+## Recovery mode
+
+From time to time, things can go wrong, and you may need to rescue your system. On most Linux systems, this is done by entering recovery mode during boot, which provides a root shell for fixing problems. However, if you followed the official Raspberry Pi installation, the root account is disabled by default. This means you cannot access recovery mode at boot, since it relies on root privileges.
+You can connect the RPi SD card to a working computer, open the `bootfs` partition, and edit the `cmdline.txt` file by adding `init=/bin/sh` to the end of the first line. Save the file, put the SD card in the Raspberry, and plug in the power. It should open to a basic terminal. At this point, however, we still do not have write permission for the files. To gain write permission, we need to remount the disk with I/O permissions using the following command:
+
+```sh
+mount -n -o remount,rw /
+```
+
+The final step in the troubleshooting process is to remove the additional parameter from the `cmdline.txt` file. Otherwise, it will open to the basic shell on each reboot.
+
 ## Hardware
 
 ### Geekworm X1011
