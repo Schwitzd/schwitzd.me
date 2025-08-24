@@ -84,6 +84,30 @@ sudo btrfs filesystem usage /mnt/my_pool
 
     Balancing a Btrfs pool is a **computationally intensive operation** and can take a significant amount of time depending on the **size and usage** of the pool.
 
+### Replace a disk
+
+For various reasons you may need to replace a disk in your Btrfs pool: a drive might fail, or you might simply want to upgrade to a larger one.
+
+1. Identify the disk you want to replace by checking its serial number to avoid accidentally removing the wrong drive:
+
+    ```sh
+    lsblk -d -o NAME,SIZE,MODEL,SERIAL
+    ```
+
+1. If the disk is still working and visible in the pool, remove it cleanly:
+
+    ```sh
+    sudo btrfs device remove /dev/nvme3n1 /mnt/my_pool/
+    ```
+
+    If the disk has already failed and is missing, tell Btrfs to forget it:
+
+    ```sh
+    sudo btrfs device remove missing /mnt/my_pool
+    ```
+
+Once you have physically replaced the disk, follow the chapter [Expand the pool](#expand-the-pool) to add the new device to the existing pool.
+
 ## Mount the pool
 
 Now is time to mount your pool in `/etc/fstab`, get the **UUID** from the previus command and add following line
