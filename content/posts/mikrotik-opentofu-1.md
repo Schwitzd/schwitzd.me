@@ -4,7 +4,7 @@ date = 2024-08-04T18:16:26Z
 draft = false
 +++
 
-This is the first part of my MikroTik and [OpenTofu](opentofu.org) series, where I will explain my old and current setup and answer a lot of questions about why.
+This is the first part of my MikroTik and [OpenTofu](https://opentofu.org) series, where I will explain my old and current setup and answer a lot of questions about why.
 
 ## Old setup
 
