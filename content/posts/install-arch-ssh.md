@@ -27,7 +27,7 @@ I found a similar approach by configuring port forwarding in VirtualBox and conn
 1. From a terminal on the host system, run the following command to connect:
 
     ```bash
-    ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -p 2222 root@localhost
+    ssh -o PubkeyAuthentication=no -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -p 2222 root@localhost
     ```
 
     The `-o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null` options will prevent verifying and writing the live environment's SSH host keys to `~/.ssh/known_hosts`
