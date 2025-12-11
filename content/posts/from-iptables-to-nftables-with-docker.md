@@ -7,6 +7,8 @@ draft = false
 This blog post was initially intended to explain how to migrate from `iptables` to `nftables` — there are plenty of similar posts all over the internet. However, I soon realised that I was also running Docker on my laptop, which still does not [natively support](https://github.com/docker/for-linux/issues/1472) `nftables` at the time of writing.
 I therefore decided to write a dual-aim article: switching to `nftables` and allowing Docker containers to access the network.
 
+*Update - 2025-12-07*: Docker 29 introduced experimental support for nftables, more details in the page [Docker with nftables](https://docs.docker.com/engine/network/firewall-nftables/)
+
 ## Disable `iptables`
 
 To fully transition to `nftables` and prevent conflicts, it's important to stop and disable the legacy `iptables` services. You can do this with the following commands:
@@ -49,7 +51,8 @@ This is my minimal firewall configuration, which I run on my everyday laptop and
 
 flush ruleset
 
-define docker_if = "docker0"
+define DOCKER_BRIDGES_IF  = { "docker0", "minikube0", "br-*"}
+define DOCKER_BRIDGES_NET_V4 = 172.16.0.0/12
 define wan_if = "eth0"  # Change this to your real external interface (e.g. wlan0)
 
 table inet filter {
@@ -78,7 +81,7 @@ table inet filter {
         type filter hook forward priority 0; policy drop
 
         # Allow containers to forward to WAN
-        iifname $docker_if oifname $wan_if accept
+        iifname $DOCKER_BRIDGES_IF oifname $WAN_IF accept
         # Allow return traffic
         ct state established,related accept
     }
@@ -93,7 +96,7 @@ table ip nat {
         type nat hook postrouting priority 100; policy accept
 
         # Masquerade container traffic going to internet
-        oifname $wan_if ip saddr 172.17.0.0/16 masquerade
+        oifname $WAN_IF ip saddr $DOCKER_BRIDGES_NET_V4 masquerade
     }
 }
 ```
