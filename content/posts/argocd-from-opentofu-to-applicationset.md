@@ -1,7 +1,7 @@
 +++
 title = 'Argocd: from Opentofu to Applicationset'
 date = 2025-11-09T15:46:09Z
-draft = true
+draft = false
 +++
 
 Since starting to work on my [Home Cluster](https://github.com/Schwitzd/IaC-HomeK3s), I have already tried three different deployment strategies for managing workloads. To provide context for the new approach, it is helpful to review how the workflow has evolved.
