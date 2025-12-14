@@ -45,7 +45,7 @@ On Intel systems that include both a GPU and an NPU, Linux exposes the two throu
 
 ## Models
 
-### NPU model
+### NPU example
 
 ```yaml
 services:
@@ -70,7 +70,7 @@ services:
     restart: unless-stopped
 ```
 
-### GPU model
+### GPU example
 
 ```yaml
 services:
@@ -113,7 +113,7 @@ ovms  | [2025-12-08 10:37:28.294][1][modelmanager][info] Available devices for O
 
 This message shows the accelerator options detected inside the container (e.g., CPU, GPU, NPU). It's a quick way to verify which processor is available for inference.
 
-## Talk to the model
+#### Talk to the model
 
 You can interact with the model using a basic `curl` request. This sends a prompt and retrieves a generated response directly from OVMS:
 
