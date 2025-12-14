@@ -1,7 +1,7 @@
 +++
 title = 'My Openvino Notes'
 date = 2025-12-07T07:52:41Z
-draft = true
+draft = false
 +++
 
 These are my notes explaining on how to run models on an Arch Linux machine using the [OpenVINO model server](https://docs.openvino.ai/2025/model-server/ovms_what_is_openvino_model_server.html) inside a Docker container. My Medion notebook is equipped with both an Intel [NPU](https://en.wikipedia.org/wiki/Neural_processing_unit) and an Intel ARC GPU. I tried running models on both.
